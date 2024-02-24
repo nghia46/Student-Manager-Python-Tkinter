@@ -8,4 +8,4 @@
 
 Note: Add student data save in StudentDB(Sqlite) file
 
-[![untitled.png](https://i.postimg.cc/LsHgBW0c/untitled.png)](https://postimg.cc/fVrbM8sC)
+![untitled.png](https://i.postimg.cc/LsHgBW0c/untitled.png)
