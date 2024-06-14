@@ -1,4 +1,6 @@
 # Simple clasic Student Manager using `Python`, `Tkinter` and `Sqlite`
+## Run
+- Terminal 'py UI.py'
 ## Feature
 - View Student
 - Search student by ID,name
