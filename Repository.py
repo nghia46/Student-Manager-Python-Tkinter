@@ -32,7 +32,14 @@ class Student:
         rows = cursor.fetchall()
         conn.close()
         return [Student.from_db(row) for row in rows]
-
+    @staticmethod
+    def search_student_by_name(student_name):
+        conn = sqlite3.connect(connString)
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM Student WHERE name LIKE ?", (f"%{student_name}%",))
+        rows = cursor.fetchall()
+        conn.close()
+        return [Student.from_db(row) for row in rows]
     @staticmethod
     def update(id, new_name, new_age, new_gpa):
         conn = sqlite3.connect(connString)

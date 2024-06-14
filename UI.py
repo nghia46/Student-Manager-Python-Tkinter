@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from main import Student
+from Repository import Student
 
 def load_data():
     # Clear the table before loading new data
@@ -34,7 +34,7 @@ def search_student():
         load_data()
         return
     # Search for students with matching IDs
-    search_results = Student.get_student_by_id(search)
+    search_results = Student.search_student_by_name(search)
     if not search_results:
         # If no matching data found, display a message or handle as needed
         load_data()
